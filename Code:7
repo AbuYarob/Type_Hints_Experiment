@@ -1,0 +1,10 @@
+def student_info(students_db, student_id):
+    for id in students_db:
+        if id == student_id:
+            return students_db[id]
+    return "No info"
+
+students_db = {42445: "Mark lion, Computer Science, Fully vaccinated",
+              76345: "Sara Madani,  Physics, Vaccinated only 1st dose"}
+
+print(student_info(students_db, 'Sara Madani'))
