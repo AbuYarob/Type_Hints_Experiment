@@ -1,0 +1,6 @@
+def mile_to_km(mile):
+    km = int(mile / 1.6)
+    return "The result is: " + str(km) + "  KM"
+
+result = mile_to_km(2.1)
+print(result)
