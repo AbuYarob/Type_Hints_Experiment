@@ -1,0 +1,13 @@
+def student_info(students_db: dict, student_id: int) -> str:
+    for id in students_db:
+        if id == student_id:
+            return students_db[id]
+    return "No info"
+
+students_db1 = {42445: "Mark lion, Computer Science, Fully vaccinated",
+              76345: "Sara Madani,  Physics, Vaccinated only 1st dose"}
+
+students_db2 = [{42445: "Mark lion, Computer Science, Fully vaccinated",
+              76345: "Sara Madani,  Physics, Vaccinated only 1st dose"}]
+
+print(student_info(students_db2, 'Sara Madani'))
