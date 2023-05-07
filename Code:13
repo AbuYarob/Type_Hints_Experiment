@@ -1,0 +1,4 @@
+def restore(N1: str, M: str) -> int:
+    return M * 2 - N1
+
+print(restore('4', '3'))
