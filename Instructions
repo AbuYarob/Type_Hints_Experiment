@@ -1,0 +1,11 @@
+Instructions:
+
+Please read the following instructions which are the guidance for this competition:
+  The goal of the competition is detecting errors “bugs”.
+  All codes have been written in Python. 
+  Every given code might have one bug or not. 
+  If the code has a bug, please determine the line of error in the error line number field then fix the error in the error correction text field. 
+  In case, there is no error please write number “0” in the error line number field and “No Error” in the error correction field.
+  In case, if you don't know the answer, please write number "0" in the error line number field and "Not sure" in the correction field. 
+  Please note, using any resources are not allowed. 
+Please note, when you move to the next code, you will not be able to go back to the previous code.
