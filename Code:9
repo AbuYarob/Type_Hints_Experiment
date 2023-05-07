@@ -1,0 +1,22 @@
+def usa_format_number(number):
+    if len(number) == 10:
+        return("(" + number[0:3] + ")" + number[3:6] + "-" + number[6:])
+    else:
+        print("It is not a phone number!")
+
+
+def phone_number_state(phone):
+    if phone[0] != "(":
+        return "it is not a phone number!!"
+    elif phone[:5] == "(202)":
+        return "The phone number is: " + phone + " from Washington, DC"
+    elif phone[:5] == "(940)":
+        return "The phone number is: " + phone + " from Denton, TX"
+    elif phone[:5] == "(814)":
+        return "The phone number is: " + phone + " from Erie, PA"
+    else:
+        return "The phone number is unknown!"
+
+
+phone_number = usa_format_number("202375432")
+print(phone_number_state(phone_number))
