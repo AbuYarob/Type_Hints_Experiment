@@ -1,0 +1,5 @@
+def square_area(side: int) -> int:
+   area = side ** 2
+   return float(area)
+
+print(square_area(4))
