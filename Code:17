@@ -1,0 +1,14 @@
+annual_income: dict = {76543: {'salary': 640, "investments": 200, "interest": 160},
+				33453: {'salary': 500, "investments": 100, "interest": 70}}
+
+def tax_calculator(key: int)-> str:
+	total_income = annual_income[key]['salary'] + annual_income[key]['investments'] + annual_income[key]['interest']
+	if total_income > 999:
+		tax_percentage: float = 0.08 * tax_calculator(key)
+		total_tax = total_income * tax_percentage
+		return(f"Your total tax is: $ {total_tax}")
+	else:
+		return("Your annual income is tax-exempt")
+
+
+print(tax_calculator(76543))
