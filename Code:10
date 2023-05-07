@@ -1,0 +1,6 @@
+def rectangle_area(width: int, height: int) -> None:
+    area: int = width * height
+    print("The area of the rectangle is: ", 'area')
+
+
+rectangle_area(4, 5)
