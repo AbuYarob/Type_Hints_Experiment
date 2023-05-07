@@ -1,0 +1,8 @@
+def recursion_factorial(num):
+    if num < 0 :
+        return "It is a wrong number!"
+    if num <= 1:
+        return 1
+    return num * recursion_factorial(num - 1)
+
+print(recursion_factorial(4))
