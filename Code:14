@@ -1,0 +1,16 @@
+def eligible(price: int) -> bool:
+    if price > 1000:
+        return True
+    else:
+        return "You are not eligible"
+
+def discount(price: int) -> str:
+    if eligible(price):
+        discount_percentage = 0.10
+        total_discount = price - (price * discount_percentage)
+        return "The price after discount is: " + str(total_discount)
+    else:
+        return "The price is: " + str(price)
+
+
+print(discount(100))
